@@ -10,20 +10,18 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      
+
       appBar: new AppBar(
         title: new Text("Flutter Routing"),
         backgroundColor: Colors.redAccent,
 
         actions: <Widget>[
-
           new IconButton(
               icon: new Icon(Icons.search),
               onPressed: (){
                 Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>FirstPage()));
               }
           )
-
         ],
       ),
 
@@ -38,51 +36,38 @@ class _HomeState extends State<Home> {
               color: Colors.redAccent
             ),
             ),
-            
             new ListTile(
               title: new Text("First Page"),
               leading: new Icon(Icons.add,color: Colors.deepOrange,),
               onTap: (){
                 Navigator.of(context).pop();
                 Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>FirstPage()));
-
               },
             ),
-
-
             new ListTile(
               title: new Text("Second Page"),
               leading: new Icon(Icons.add,color: Colors.deepOrange,),
               onTap: (){
                 Navigator.of(context).pop();
                 Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>FirstPage()));
-
               },
             ),
-
             new ListTile(
               title: new Text("Third Page"),
               leading: new Icon(Icons.add,color: Colors.deepOrange,),
               onTap: (){
                 Navigator.of(context).pop();
                 Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>FirstPage()));
-
               },
             ),
-
             new ListTile(
               title: new Text("Fourth Page"),
               leading: new Icon(Icons.add,color: Colors.deepOrange,),
               onTap: (){
                 Navigator.of(context).pop();
                 Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>FirstPage()));
-
               },
             ),
-
-
-            
-
           ],
         ),
       ),//end drawer
